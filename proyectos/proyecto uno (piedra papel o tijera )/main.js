@@ -6,7 +6,7 @@ let compucore = 0;
 // eleccion humana
 function play () {
 function humanChoice (){
-    let userChoice = prompt("escribe piedra papel o tijera " );
+    let userChoice = prompt("escribe 0 para piedra 1 para papel o 2 para tijera " );
 
     
     switch (userChoice) {
