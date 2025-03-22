@@ -1,37 +1,13 @@
-// p
-const p = document.createElement("P");
+/*codigo js metodo 2 con class */
 
-p.style.color ="red"
-p.textContent="¡Hola, soy rojo!"
+const btn = document.querySelector(".btn");
 
-document.body.appendChild(p);
-//h3
-const h3 = document.createElement("h3")
+btn.onclick = () => alert("hello world !")
 
-h3.style.color ="blue"
-h3.textContent="¡Hola, soy un H3 azul!"
+/* codigo js metodo 3 con addeventlistener */
 
-document.body.appendChild(h3);
+const btnByID = document.querySelector("#btnMethod")
 
-// div 
-const div = document.createElement("div");
-
-div.style.backgroundColor="pink"
-
-document.body.appendChild(div);
-//h1/div 
-
-const h1Div = document.createElement("h1")
-
-h1Div.textContent="estoy en un div"
-
-div.appendChild(h1Div)
-
-//p/div 
-
-const pDiv = document.createElement("p")
-
-pDiv.textContent="yo igual"
-
-div.appendChild(pDiv)
-
+btnByID.addEventListener("click", () => {
+    alert("Method 3 ")
+});
